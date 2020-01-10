@@ -66,7 +66,7 @@ async function login (ctx) {
     ctx.redirect(`/${passport.user}/posts`)
   } else {
     ctx.status = 401
-    ctx.body = '登陸失敗！'
+    ctx.body = '登入失敗！'
   }
 }
 
@@ -78,7 +78,7 @@ async function signup (ctx) {
     ctx.body = '註冊成功！'
   } else {
     ctx.status = 401
-    ctx.body = '登陸失敗！'
+    ctx.body = '登入失敗！'
   }
 }
 
